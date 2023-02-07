@@ -8,7 +8,7 @@ if (CMAKE_COMPILER_IS_GNUCC)
 	set (CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Werror")
 endif ()
 
-pkg_search_module (GUILE REQUIRED guile-2.0)
+pkg_search_module (GUILE REQUIRED guile-2.2)
 
 find_library (ODBC odbc)
 if (${ODBC} STREQUAL "ODBC-NOTFOUND")
